@@ -9,9 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@latest
+      - uses: actions/checkout@v3.5.2
       - name: Set up Node.js
-        uses: actions/setup-node@latest
+        uses: actions/setup-node@v3
         with:
           node-version: '18.x'
       - name: Install dependencies
