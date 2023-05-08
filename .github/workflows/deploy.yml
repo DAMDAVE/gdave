@@ -25,6 +25,6 @@ jobs:
           folder: build
           token: ${{ secrets.GITHUB_TOKEN }}
     env:
-       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-           run: echo "Deployed to GitHub Pages"
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         
 
