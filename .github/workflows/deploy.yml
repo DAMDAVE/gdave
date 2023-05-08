@@ -9,9 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@latest
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@latest
         with:
           node-version: '18.x'
       - name: Install dependencies
@@ -23,3 +23,8 @@ jobs:
         with:
           branch: gh-pages
           folder: build
+          token: ${{ secrets.GITHUB_TOKEN }}
+      env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+           run: echo "Deployed to GitHub Pages"
+
