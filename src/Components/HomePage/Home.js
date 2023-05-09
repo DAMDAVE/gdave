@@ -1,13 +1,9 @@
-import React from 'react';
-import Header from './Header';
-import './Home.css';
-// import Footer from './Footer'
-
-const Home = () => {
+import Header from "./Header";
+ function Home () {
     return (
-        <>
-        <Header  />
-        </>
+    <>
+        <Header />
+    </>
     );
 }
 

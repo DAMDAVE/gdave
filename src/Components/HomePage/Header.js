@@ -1,16 +1,15 @@
-import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-const Header = () => {
-   return (
+function Header () {
+    return (
     <>
-    <h1>Gdave</h1>
-     {/* <Routes>
-        <Route path="/about"></Route>
-        <Route path="/about"></Route>
-     </Routes> */}
+      <header>
+      <p>Gdave</p>
+      <Link to='/' className='navItems'>Home</Link>
+      <Link to='/about-us' className='navItems'>About Us</Link>
+      <Link to='/booking' className='navItems'>Book an Appointment</Link>
+      </header>
     </>
-   )
+    )
 }
-
-export default Header; 
+export default Header;
