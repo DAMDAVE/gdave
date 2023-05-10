@@ -2,7 +2,7 @@
 header {
   background-image: url(./Assets/Images/gdave4.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   width: 100%;
   height: 605px;
 }
@@ -21,33 +21,34 @@ header {
   text-decoration: none;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 0px) and (max-width: 320px) {
   header {
-    height: 100px;
+    height: 160px;
   }
   .gdave{
-    font-size: 30px;
+    padding-top: 10px;
+    font-size: 20px !important;
     padding-left: 12px;
   }
 
 }
 
-@media  screen and (max-width: 480px) {
+@media  screen and (min-width: 321px) and  (max-width: 480px) {
   header {
-    height: 150px;
+    height: 249px;
   }
   .gdave{
-    font-size: 40px;
+    font-size: 40px !important;
     padding-left: 14px;
  }
 }
 
-@media  screen and (max-width: 768px) {
+@media  screen and (min-width: 481px) and (max-width: 768px) {
   header {
     height: 399px;
   }
   .gdave{
-    font-size: 50px;
+    font-size: 50px !important;
     padding-left: 16px;
  }
  .navItems {
@@ -56,12 +57,12 @@ header {
 } 
 }
 
-@media  screen and (max-width: 992px) {
+@media  screen and (min-width: 767px) and (max-width: 992px) {
   header {
     height: 515px;
   }
   .gdave{
-    font-size: 60px;
+    font-size: 60px !important;
     padding-left: 18px;
  }
  .navItems {

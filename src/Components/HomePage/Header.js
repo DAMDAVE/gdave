@@ -8,22 +8,6 @@ const links = (
     <Link to='/booking' className='navItems'>Book an Appointment</Link>
     </>
   )
-// const screenWidth = window.innerWidth;
-// function Header () {
-//     return (
-//     <>
-//       <header>
-//        <div>
-//        <Link to='/' className='gdave'>Gdave</Link>
-//        {
-//         screenWidth >= 600 ? ({links}) : null
-//        }
-//        </div> 
-//       </header>
-//     </>
-//     )
-// }
-
 
 function Header () {
   const [screenWidth, setScreenWidth] = useState(null);
@@ -38,7 +22,7 @@ function Header () {
   return (
     <header>
     <div>
-      <Link to='/' className='gdave'>Gdave</Link>
+      <Link to='/' className='gdave'>GDave</Link>
       {screenWidth && screenWidth >= 600 ? links : null}
     </div>
     </header>
