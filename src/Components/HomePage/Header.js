@@ -8,10 +8,9 @@ const links = (
     <Link to='/booking' className='navItems'>Book an Appointment</Link>
     </>
   )
-
+ 
 function Header () {
-  const [screenWidth, setScreenWidth] = useState(null);
-
+  const [screenWidth, setScreenWidth] = useState(null);  
   useEffect(() => {
     setScreenWidth(window.innerWidth);
     const handleResize = () => setScreenWidth(window.innerWidth);
