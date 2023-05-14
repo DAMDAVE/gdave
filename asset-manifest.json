@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/gdave/static/css/main.6c1c81ed.css",
+    "main.css": "/gdave/static/css/main.9b697de6.css",
     "main.js": "/gdave/static/js/main.0308c732.js",
     "static/js/787.5440b338.chunk.js": "/gdave/static/js/787.5440b338.chunk.js",
     "static/media/gdave4.jpg": "/gdave/static/media/gdave4.bad917b8a18c8a5563dd.jpg",
     "index.html": "/gdave/index.html",
-    "main.6c1c81ed.css.map": "/gdave/static/css/main.6c1c81ed.css.map",
+    "main.9b697de6.css.map": "/gdave/static/css/main.9b697de6.css.map",
     "main.0308c732.js.map": "/gdave/static/js/main.0308c732.js.map",
     "787.5440b338.chunk.js.map": "/gdave/static/js/787.5440b338.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c1c81ed.css",
+    "static/css/main.9b697de6.css",
     "static/js/main.0308c732.js"
   ]
 }
