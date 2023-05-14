@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN PAGE</title>
+    <style>
+        .form{
+           margin-left: 40%;
+        }
+         label{
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+         }
+         button{
+             text-align: center;
+         }
+         a{
+             text-align: center;
+             font-size: 10px
+         }
+
+    </style>
+</head>
+<! THIS IS THE HTML FILE FOR THE LOGIN PAGE. IT CONTAINS A FORM. I GET USERS INPUT FROM THE FORM AND CROSSCHECK
+WITH DATA STORED IN THE DATABASE WITH THE AID OF THE PYTHON FLASK >
+<body>
+    <div class="form">
+        <h1>LOGIN TO GDAVE</h1>
+        <form method="post">
+            <div>
+                <label>NAME</label><br>
+                <input type="text" name="name" placeholder="Goodness">
+            </div>
+            <br>
+            <div>
+                <label>PASSWORD</label><br>
+                <input type="password" name="password">
+            </div>
+            <br>
+            <br>
+            <div>
+                <button>SUBMIT</button>
+            </div>
+        </form>
+        <br><br>
+        <a href="/signup">DO NOT HAVE AN ACCOUNT? SIGN UP</a>
+    </div>
+
+</body>
+</html>

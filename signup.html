@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width initial-scale=1"
+    <title>SIGN UP PAGE</title>
+    <style>
+         .form{
+            margin-left: 40%;
+         }
+         label{
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+         }
+         button{
+             text-align: center;
+         }
+
+         @media(min-width=612px max-width=900px){
+              .form{
+                  margin-left: 40%;
+                  font-size: 20px;
+              }
+         }
+    </style>
+</head>
+<! THIS IS THE SIGN UP PAGE. IT INCLUGES A FORM WHICH IS ATTACHED TO THE FLASK APP. THIS RECEIVES INPUT, SEND IT TO THE
+FLASK APP AND IT IS STORED IN THE DATABASE>
+<body>
+    <div class="form">
+        <h1>SIGN UP</h1>
+        <form method ="POST">
+            <div>
+                <label>NAME</label><br>
+                <input type="text" name="name" placeholder="Goodness">
+            </div>
+            <br>
+            <div>
+                <label>PASSWORD</label><br>
+                <input type="password" name="password">
+            </div>
+            <br>
+            <div>
+                <label>EMAIL ADDRESS</label><br>
+                <input type="text" name="email">
+            </div>
+            <br>
+
+            <div>
+                <button>SUBMIT</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
