@@ -12,4 +12,6 @@ code {
     monospace;
 }
 
-
+.intro{
+  background-image: url(./Assets/Images/gdave4.jpg);
+}
