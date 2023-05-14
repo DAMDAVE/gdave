@@ -3,7 +3,7 @@ from sqlalchemy import create_engine, text
 
 
 
-db_connection_string = DB_CONNECTION_STRING	= "mysql+pymysql://a5b0x64fv7gzz22310z4:pscale_pw_yXdksMA9jTtnzpeDakwKf40pOjKgSlUN9RFFbjMP7xN@aws.connect.psdb.cloud/goodness?charset=utf8mb4"
+db_connection_string = DB_CONNECTION_STRING	= "mysql+pymysql://e97mikgvwjxzlv0mq21n:pscale_pw_em9sYpmTHt8XG3UpIFS4E3536n90Ih1nLuUMyHFv95h@aws.connect.psdb.cloud/goodness?charset=utf8mb4"
 engine = create_engine(db_connection_string,
                        connect_args={
                            "ssl":{
