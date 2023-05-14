@@ -39,7 +39,7 @@ header {
 
 /***styles affecting body.js */
 .intro {
-  background-image: url(./Assets/Images/gdave4.jpg);
+  /* background-image: url(.././public/Assets/Images/gdave4.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   height: 800px;
@@ -198,7 +198,5 @@ hr{
 }
   
 .encapsulate{
-  height: 30vh;
-  margin-top: 35vh;
-  margin-bottom: 35vh;
+  vertical-align: middle;
 }
