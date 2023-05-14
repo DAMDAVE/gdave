@@ -1,56 +1,95 @@
 /* General Styles */
-  /* Styles for the Header */
-body{
-  height: 200000px;
-  scroll-behavior: smooth;
-  background-color: #9bd0eb;
+*{
+  box-sizing: border-box;
 }
+
+body{
+  scroll-behavior: smooth;
+  background-color: #daecf5;
+}
+
+/* Styles for the Header */
+
+
 header {
   position: fixed;
-  background: linear-gradient(#000000 , #00000025, transparent);
+  background-color: #00000026;
   top: 0px;
+  height: 75px;
   width: 100vw;
 }
 
 .gdave{
    font-size: 70px;
+   font-weight: bolder;
    padding-top: 10px;
    font-family: 'Quark';
    padding-left: 20px;
-   color: #0a137d;
+   color: #b6acd6;
    text-decoration: none;
    height: 10vh;
 }
 
 .navItems {
   padding-left: 30px;
-  color: #97a1f6;
+  color: #ffffff;
   font-size: 20px;
-  font-family: 'Belgan Aesthetic';
   text-decoration: none;
 }
+
+/***styles affecting body.js */
 .intro {
-   background-image: url('./Assets/Images/gdave4.jpg');
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: 605px;
-   margin-top: -20px;
+  background-image: url(./Assets/Images/gdave4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.spacer{
+  height: 78px;
+}
+
+.heading{
+  margin: auto auto auto 30px;
+  font-weight: 250;
 }
 
 .intro>p{
   color: #ffffff;
-  padding-top: 100px;
+  font-size: 20px;
+  margin: 0px auto 0px 30px;
 }
+
+/**************************/
+
 /* for smaller screens i.e phones*/
 @media screen and (min-width: 0px) and (max-width: 320px) {
-  .gdave{
-    padding-top: 10px;
-    font-size: 20px !important;
-    padding-left: 12px;
+header{
+    height: 60px;
+}
+.gdave{
+  padding-top: 10px;
+  font-size: 20px !important;
+  padding-left: 12px;
+  height: 8vh;
   }
-  .intro {
-    height: 166px;
- }
+.intro{
+  height: 400px;
+}
+
+.spacer{
+  height: 63px;
+}
+
+.heading{
+  font-size: 20px;
+}
+
+.intro>div>p{
+  font-size: 15px;
+}
 }
 /* medium sized screens  i.e tablets */
 @media  screen and (min-width: 321px) and  (max-width: 480px) {
@@ -59,7 +98,7 @@ header {
     padding-left: 14px;
  }
  .intro {
-  height: 249px;
+  height: 515px;
 }
 }
 /* large screens i.e large tablets, smaller computers */
@@ -73,7 +112,7 @@ header {
   font-size: 15px;
 } 
 .intro {
-  height: 399px;
+  height: 515px;
 }
 }
 /* larger screens e.g bigger computers, desktops and tv's */
@@ -87,7 +126,7 @@ header {
   font-size: 18px;
 }
 .intro {
-  height: 515px;
+  height: 600px;
 }
 }
 
@@ -96,17 +135,18 @@ header {
 
 /* Hamburger Menu Code */
 .container {
+  z-index: 200000;
   display: inline-block;
-  position: fixed;
+  position: absolute;
   cursor: pointer;
   top: 10px;
-  right: 10px;
+  right: 30px;
 }
 
 .bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 2px;
-  background-color: #67c9ef;
+  width: 30px;
+  height: 1px;
+  background-color: #b6acd6;;
   margin: 10px 0;
   transition: 0.4s;
 }
@@ -122,3 +162,43 @@ header {
 }
 
 /**************************************/
+
+/* Animations */
+@keyframes move {
+  from {width: 0px}
+}
+
+.contain{
+  display: none;
+}
+
+.contain.change{
+   display: block !important;
+   position: fixed;
+   top: 0px;
+   background-color: #5e27dd;
+   color: white;
+   width: 100%;
+   height: 100vh;
+}
+
+
+a.navItems2{
+  display: block;
+  margin: 50px;
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+hr{
+  width: 90%;
+  margin-left: 5%;
+}
+  
+.encapsulate{
+  height: 30vh;
+  margin-top: 35vh;
+  margin-bottom: 35vh;
+}
