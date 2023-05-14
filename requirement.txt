@@ -1,0 +1,4 @@
+flask
+SQLAlchemy
+pymysql
+gunicorn
